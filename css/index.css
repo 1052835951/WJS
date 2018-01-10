@@ -1,0 +1,349 @@
+@charset "UTF-8";
+i {
+    font-style: normal;
+}
+
+a {
+    color: #000;
+}
+a:hover {
+    color: #e92322;
+    text-decoration: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/*头部*/
+
+.header {
+    height:40px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height:40px;
+    overflow: hidden;
+}
+
+.header .item {
+    border-right: 1px solid #ccc;
+}
+.header .item:first-child a {
+    display: block;
+    height:100%;
+    width:100%;
+    position: relative;
+
+}
+
+.header .item a img {
+    border:1px solid #ccc;
+    position: absolute;
+    top:40px;
+    left:5px;
+    display: none;
+}
+.header .item a:hover img {
+    display: block;
+}
+
+.header .btn-danger {
+    padding: 2px 12px;
+}
+
+/*导航*/
+.wjs-nav{
+    overflow: hidden;
+}
+.wjs-nav .nav>li>a {
+    padding: 25px 15px;
+}
+.wjs-nav .nav>li>a:hover {
+    border-bottom: 3px solid #e92322;
+}
+.wjs-nav .navbar-default {
+    background-color: #fff;
+}
+.wjs-nav .navbar-default .navbar-nav>.active>a,
+.wjs-nav .navbar-default .navbar-nav>.active>a:focus,
+.wjs-nav .navbar-default .navbar-nav>.active>a:hover{
+    color: #e92322;
+    background-color: #fff;
+    border-bottom: 3px solid #e92322;
+}
+
+.wjs-nav .wjs_icon_logo {
+    font-size: 50px;
+    color: #e92322;
+    vertical-align: middle;
+}
+.wjs-nav .navbar-brand {
+    padding: 25px 15px;
+}
+.wjs-nav .wjs_icon_word {
+    font-size: 36px;
+    color: #000;
+    vertical-align: middle;
+}
+
+.wjs-nav .navbar {
+    border:none;
+    border-radius: 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0;
+}
+
+.wjs-nav .navbar-toggle {
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+@media (min-width: 640px) {
+
+    .wjs-banner .carousel-inner>.item>a>img,
+    .wjs-banner .carousel-inner>.item>img,
+    .wjs-banner .img-responsive, .thumbnail a>img,
+    .wjs-banner .thumbnail>img{
+        height:410px;
+        max-width: none;
+    }
+    .wjs-banner .carousel-inner .item {
+        height:410px;
+        overflow: hidden;
+    }
+    .wjs-banner .carousel-inner .item img{
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+
+/*info*/
+.wjs-info {
+    padding:20px 0;
+    border-bottom:1px solid #ccc;
+}
+.wjs-info .info-box {
+    margin-top: 20px;
+}
+.wjs-info .info-left {
+    padding-top: 10px;
+    font-size: 36px;
+}
+
+
+/*预约*/
+
+.wjs-book {
+    padding: 30px 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+.wjs-book .book-now {
+    color: #e92322;
+    border-bottom: 1px dashed #e92322;
+}
+
+.wjs-book .wjs_icon_clock,
+.wjs-book .wjs_icon_video{
+    font-size: 18px;
+}
+
+
+/*产品*/
+.wjs-product {
+    padding: 30px 0;
+    background-color: #f5f5f5;
+}
+
+
+.wjs-product .nav-tabs>li.active>a,
+.wjs-product .nav-tabs>li.active>a:focus,
+.wjs-product .nav-tabs>li.active>a:hover{
+    background-color: #f5f5f5;
+    border:1px solid transparent;
+    border-bottom: 3px solid #e92322;
+}
+.wjs-product .nav-wrapper {
+    width:100%;
+}
+.wjs-product .nav-tabs>li>a:hover {
+    background-color: #f5f5f5;
+    color: #e92322;
+    border-color: transparent;
+}
+
+.wjs-product .media-box {
+    width:100%;
+    height:150px;
+    background-color: pink;
+    margin-top: 20px;
+    position: relative;
+}
+.wjs-product .media-box .con-right {
+    width:80px ;
+    height:100%;
+    text-align: center;
+    border-left: 1px dashed blue;
+    position: relative;
+}
+
+.wjs-product .media-box .con-right:before,
+.wjs-product .media-box .con-right:after {
+    content: '';
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    position: absolute;
+    left:-10px;
+}
+.wjs-product .media-box .con-right:before {
+    top:-10px;
+}
+
+.wjs-product .media-box .con-right:after {
+    bottom:-10px;
+}
+.wjs-product .media-box .con-right p:first-child {
+    margin-top: 40px;
+}
+
+.wjs-product .media-box .con-right p:first-child b{
+    font-size: 30px;
+}
+.wjs-product .media-box .con-right p:last-child{
+    font-size: 16px;
+}
+
+
+.wjs-product .media-box .con-left {
+    height:150px;
+    margin-right: 80px;
+    /*background-color: green;*/
+    overflow: hidden;
+
+}
+
+.wjs-product .media-box .con-left h4 {
+    text-align: center;
+    margin-top: 20px;
+}
+.wjs-product .media-box .con-left p{
+    margin-bottom: 5px;
+}
+
+
+.wjs-product .media-box .wjs_icon_experience {
+    font-size: 40px;
+    position: absolute;
+    left:0;
+    top:-8px;
+}
+
+.wjs-product .tab-content .active .active .media-box{
+    background-color: #e92322;
+    color: #fff;
+}
+
+/*新闻模块*/
+.wjs-news {
+    padding: 30px 0;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.wjs-news .col-md-2 h3 {
+    border-bottom:1px solid #ccc;
+    padding: 20px 0 ;
+    position: relative;
+}
+.wjs-news .col-md-2 h3:before {
+    content: '';
+    width:6px;
+    height:6px;
+    border:1px solid #ccc;
+    border-radius: 50%;
+    position: absolute;
+    bottom:-3px;
+    right:-6px;
+}
+.wjs-news .nav-tabs{
+    border-bottom: none;
+}
+.wjs-news .nav-tabs>li {
+    margin-bottom: 60px;
+}
+.wjs-news .nav-tabs>li:last-child {
+    margin-bottom: 0px;
+}
+
+
+
+.wjs-news .nav-tabs>li>a{
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+
+    border:1px solid transparent;
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    background-color: #ccc;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+}
+
+.wjs-news .nav-tabs>li>a>i {
+    font-size: 30px;
+
+}
+
+.wjs-news .nav-tabs>li.active>a,
+.wjs-news .nav-tabs>li.active>a:focus,
+.wjs-news .nav-tabs>li.active>a:hover{
+    background-color: #e92322;
+    color: #fff;
+    border:1px solid transparent;
+}
+
+
+.wjs-news .news-line {
+    width:1px;
+    height:100%;
+    border-left: 1px dashed #ccc;
+    position: absolute;
+    left:45px;
+    top:0;
+}
+
+.wjs-news .tab-content li {
+    padding: 10px 0;
+}
+
+
+@media (max-width: 992px) {
+    .wjs-news .nav-tabs>li {
+        width:25%;
+        padding: 30px 0;
+        margin: 0;
+
+    }
+    .wjs-news .nav-tabs>li>a {
+        margin: 0 auto;
+    }
+}
+
+
+/*合作伙伴*/
+
+.partner {
+    font-size: 60px;
+    text-align: center;
+}
+.partner i {
+    margin: 0 30px;
+}
